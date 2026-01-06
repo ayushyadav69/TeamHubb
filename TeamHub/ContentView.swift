@@ -8,17 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(ViewModel.self) var viewModel
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        @Bindable var viewModel = viewModel
+        NavigationStack {
+            List(viewModel.filteredMembers) { member in
+                MemberRowView(member: member)
+            }
+            .searchable(text: $viewModel.searchText, prompt: "Search")
+            .navigationTitle("Team Members")
         }
-        .padding()
     }
 }
 
 #Preview {
+    let viewModel = ViewModel()
     ContentView()
+        .environment(viewModel)
 }
