@@ -6,17 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXFileReference section */
-		A08F4B9A2F0BDAA8005E24FF /* TeamHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
+/* Begin PBXBuildFile section */
+		A0BFBF152F0D1BB1001BAFD2 /* TeamHubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BFBF122F0D1BB1001BAFD2 /* TeamHubApp.swift */; };
+		A0BFBF162F0D1BB1001BAFD2 /* TeamMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BFBF132F0D1BB1001BAFD2 /* TeamMember.swift */; };
+		A0BFBF172F0D1BB1001BAFD2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BFBF142F0D1BB1001BAFD2 /* ViewModel.swift */; };
+		A0BFBF182F0D1BB1001BAFD2 /* MemberRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BFBF112F0D1BB1001BAFD2 /* MemberRowView.swift */; };
+		A0BFBF192F0D1BB1001BAFD2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BFBF102F0D1BB1001BAFD2 /* ContentView.swift */; };
+		A0BFBF1A2F0D1BB1001BAFD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0BFBF0F2F0D1BB1001BAFD2 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		A08F4B9C2F0BDAA8005E24FF /* TeamHub */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TeamHub;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
+/* Begin PBXFileReference section */
+		A0BFBF0F2F0D1BB1001BAFD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0BFBF102F0D1BB1001BAFD2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A0BFBF112F0D1BB1001BAFD2 /* MemberRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberRowView.swift; sourceTree = "<group>"; };
+		A0BFBF122F0D1BB1001BAFD2 /* TeamHubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamHubApp.swift; sourceTree = "<group>"; };
+		A0BFBF132F0D1BB1001BAFD2 /* TeamMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMember.swift; sourceTree = "<group>"; };
+		A0BFBF142F0D1BB1001BAFD2 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		A0BFBF1C2F0D1CF6001BAFD2 /* TeamHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeamHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A08F4B972F0BDAA8005E24FF /* Frameworks */ = {
@@ -32,17 +39,22 @@
 		A08F4B912F0BDAA8005E24FF = {
 			isa = PBXGroup;
 			children = (
-				A08F4B9C2F0BDAA8005E24FF /* TeamHub */,
-				A08F4B9B2F0BDAA8005E24FF /* Products */,
+				A0BFBF1B2F0D1BD7001BAFD2 /* TeamHub */,
+				A0BFBF1C2F0D1CF6001BAFD2 /* TeamHub.app */,
 			);
 			sourceTree = "<group>";
 		};
-		A08F4B9B2F0BDAA8005E24FF /* Products */ = {
+		A0BFBF1B2F0D1BD7001BAFD2 /* TeamHub */ = {
 			isa = PBXGroup;
 			children = (
-				A08F4B9A2F0BDAA8005E24FF /* TeamHub.app */,
+				A0BFBF122F0D1BB1001BAFD2 /* TeamHubApp.swift */,
+				A0BFBF102F0D1BB1001BAFD2 /* ContentView.swift */,
+				A0BFBF112F0D1BB1001BAFD2 /* MemberRowView.swift */,
+				A0BFBF132F0D1BB1001BAFD2 /* TeamMember.swift */,
+				A0BFBF142F0D1BB1001BAFD2 /* ViewModel.swift */,
+				A0BFBF0F2F0D1BB1001BAFD2 /* Assets.xcassets */,
 			);
-			name = Products;
+			path = TeamHub;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,14 +72,11 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				A08F4B9C2F0BDAA8005E24FF /* TeamHub */,
-			);
 			name = TeamHub;
 			packageProductDependencies = (
 			);
 			productName = TeamHub;
-			productReference = A08F4B9A2F0BDAA8005E24FF /* TeamHub.app */;
+			productReference = A0BFBF1C2F0D1CF6001BAFD2 /* TeamHub.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -82,6 +91,7 @@
 				TargetAttributes = {
 					A08F4B992F0BDAA8005E24FF = {
 						CreatedOnToolsVersion = 26.2;
+						LastSwiftMigration = 2620;
 					};
 				};
 			};
@@ -95,7 +105,7 @@
 			mainGroup = A08F4B912F0BDAA8005E24FF;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = A08F4B9B2F0BDAA8005E24FF /* Products */;
+			productRefGroup = A08F4B912F0BDAA8005E24FF;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -109,6 +119,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0BFBF1A2F0D1BB1001BAFD2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +130,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0BFBF152F0D1BB1001BAFD2 /* TeamHubApp.swift in Sources */,
+				A0BFBF162F0D1BB1001BAFD2 /* TeamMember.swift in Sources */,
+				A0BFBF172F0D1BB1001BAFD2 /* ViewModel.swift in Sources */,
+				A0BFBF182F0D1BB1001BAFD2 /* MemberRowView.swift in Sources */,
+				A0BFBF192F0D1BB1001BAFD2 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +267,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 57D58UHB8R;
@@ -272,6 +289,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -283,6 +301,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 57D58UHB8R;
