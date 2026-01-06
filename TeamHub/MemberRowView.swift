@@ -35,6 +35,8 @@ struct MemberRowView: View {
     }
 }
 
-//#Preview {
-//    MemberRowView()
-//}
+#Preview {
+    let viewModel = ViewModel()
+    MemberRowView(member: viewModel.teamMembers[0])
+        .environment(viewModel)
+}
